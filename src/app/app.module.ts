@@ -6,6 +6,7 @@ import { FokusComponent } from './components/fokus/fokus.component';
 import { AppComponent } from './components/main/app.component';
 import { FruitsComponent } from './components/fruits/fruits.component';
 import { FruitComponent } from './components/fruit/fruit.component';
+import { ReadingComponent } from './components/reading/reading.component';
 
 
 
@@ -21,6 +22,7 @@ const routes: Routes = [
     FokusComponent,
     FruitsComponent,
     FruitComponent,
+    ReadingComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FruitsModel } from 'src/app/models/fruits.model';
+import { ReadingListService } from 'src/app/services/reading-list.service';
 
 @Component({
   selector: 'app-fruit',
@@ -18,7 +19,7 @@ export class FruitComponent implements OnInit {
   img:string;
 
 
-  constructor() { 
+  constructor(private readinglistservice:ReadingListService) { 
 
   }
 
@@ -27,9 +28,12 @@ export class FruitComponent implements OnInit {
     this.id = this.fruit.id;
     this.name=this.fruit.name;
     this.FirstBlessing=this.fruit.FirstBlessing;
-    this.LestBlessing=this.fruit.LestBlessing;
     this.url=this.fruit.url;
     this.img=this.fruit.img;
+  }
+
+  AddToList():void{
+    this.readinglistservice.add(this.fruit);
   }
 
 }

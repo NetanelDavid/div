@@ -1,3 +1,7 @@
 .col-1{
     text-align:right;
 }
+
+#rtl {
+    direction: rtl;
+}

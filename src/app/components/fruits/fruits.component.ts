@@ -12,28 +12,24 @@ export class FruitsComponent implements OnInit {
 
   fruits:FruitsModel[];
   constructor() { 
-
     this.fruits=[
       { id:0,
-        name:'banana',
-        FirstBlessing:'aadsma',
-        LestBlessing:'bore nefosoth',
+        name:'בננה',
+        FirstBlessing:'האדמה',
         url:new URL('https://en.wikipedia.org/wiki/Banana'),
-        img:'https://drive.google.com/file/d/1EKyma5vTq94C8J57HoAcQNAcd8rsUckF/view?usp=sharing',
+        img:'https://github.com/NetanelDavid/div/blob/main/images/banana.jpg?raw=true',
       },{
         id:1,
-        name:'apple',
-        FirstBlessing:'aetz',
-        LestBlessing:'bore nefosoth',
+        name:'תפוח',
+        FirstBlessing:'העץ',
         url:new URL('https://en.wikipedia.org/wiki/Apple'),
-        img:'https://drive.google.com/file/d/1L2NHySSDJ8P2z3SjqJbHupjwXcdXnQSv/view?usp=sharing',
+        img:'https://github.com/NetanelDavid/div/blob/main/images/apple.jpg?raw=true',
       },{
         id:2,
-        name:'pear',
-        FirstBlessing:'aetz',
-        LestBlessing:'bore nefosoth',
+        name:'אגס',
+        FirstBlessing:'העץ',
         url:new URL('https://en.wikipedia.org/wiki/Pear'),
-        img:'https://drive.google.com/file/d/1DuFQlGhJrUDikvG5TVIc4JaqxtY61059/view?usp=sharing',
+        img:'https://github.com/NetanelDavid/div/blob/main/images/pear.jpg?raw=true',
       }
     ]
   }
