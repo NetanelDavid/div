@@ -5,11 +5,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { FokusComponent } from './components/fokus/fokus.component';
 import { AppComponent } from './components/main/app.component';
 import { FruitsComponent } from './components/fruits/fruits.component';
+import { FruitComponent } from './components/fruit/fruit.component';
 
 
 
 const routes: Routes = [
-  {path:'fokus',component:FokusComponent}
+  {path:'fokus',component:FokusComponent},
+  {path:'fruits',component:FruitsComponent},
+  {path:'',component:FruitsComponent}  //pemp
 ];
 
 @NgModule({
@@ -17,6 +20,7 @@ const routes: Routes = [
     AppComponent,
     FokusComponent,
     FruitsComponent,
+    FruitComponent,
   ],
   imports: [
     BrowserModule,
