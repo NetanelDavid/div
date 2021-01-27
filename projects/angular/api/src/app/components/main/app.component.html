@@ -1,0 +1,7 @@
+<app-from (SearchDataEvent)='search($event)'></app-from>
+<p *ngIf='error'>{{error}}</p>
+<p *ngIf='name'>{{name}}</p>
+<p *ngIf='email'>{{email}}</p>
+<p *ngIf='avatar'>
+    <img [src]="avatar">
+</p>
