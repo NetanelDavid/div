@@ -11,7 +11,6 @@ export class FruitComponent implements OnInit {
 
  @Input()fruit :FruitsModel;
 
-  id:number;
   name:string;
   FirstBlessing:string;
   LestBlessing:string;
@@ -25,7 +24,6 @@ export class FruitComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.id = this.fruit.id;
     this.name=this.fruit.name;
     this.FirstBlessing=this.fruit.FirstBlessing;
     this.url=this.fruit.url;

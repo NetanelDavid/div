@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { FruitsModel } from 'src/app/models/fruits.model';
 import { ReadingListService } from 'src/app/services/reading-list.service';
 
@@ -10,15 +11,20 @@ import { ReadingListService } from 'src/app/services/reading-list.service';
 export class ReadingComponent implements OnInit {
 
   Listreading:FruitsModel[];
+  Subscrip:Subscription;
 
   constructor(private readinglistservice:ReadingListService) {
-   
+
   }
   
   ngOnInit(): void {
-    setInterval(() => {
-      this.Listreading=this.readinglistservice.get();
-      },1)
+    this.Subscrip = this.readinglistservice.get().subscribe(updating =>{
+      this.Listreading=updating
+    })   
+  }
+
+  unsub():void{
+    this.Subscrip.unsubscribe();
   }
 
 

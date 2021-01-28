@@ -13,7 +13,6 @@ import { ReadingComponent } from './components/reading/reading.component';
 const routes: Routes = [
   {path:'fokus',component:FokusComponent},
   {path:'fruits',component:FruitsComponent},
-  {path:'',component:FruitsComponent}  //pemp
 ];
 
 @NgModule({

@@ -3,7 +3,6 @@ import { Component,HostListener, OnInit } from '@angular/core';
 const shifting = window.innerWidth/25;
 
 @Component({
-  selector: 'app-fokus',
   templateUrl: './fokus.component.html',
   styleUrls: ['./fokus.component.css']
 })
