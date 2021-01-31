@@ -8,7 +8,6 @@ import { FruitsComponent } from './components/fruits/fruits.component';
 import { FruitComponent } from './components/fruit/fruit.component';
 import { ReadingComponent } from './components/reading/reading.component';
 import { StarsComponent } from './components/stars/stars.component';
-import { StarComponent } from './components/star/star.component';
 
 const routes: Routes = [
   {path:'fokus',component:FokusComponent},
@@ -25,7 +24,6 @@ const routes: Routes = [
     FruitComponent,
     ReadingComponent,
     StarsComponent,
-    StarComponent,
   ],
   imports: [
     BrowserModule,

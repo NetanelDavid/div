@@ -1,7 +1,5 @@
-<app-star 
+<i 
 *ngFor='let a of amountStars; let i = index'
-[id]='i+1'
-[rating]='rating' 
-(UserRated)='ret($event)'>
-</app-star>
-<br>
+[ngClass]="{'fas fa-star':i &lt;= rating,'far fa-star':true}"
+(click)='MakingRating(i)'>
+</i>

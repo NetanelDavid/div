@@ -11,14 +11,12 @@ export class StarsComponent implements OnInit {
   rating:number;
 
   constructor() {
-    this.rating=0;
     this.amountStars=new Array(5);
    }
 
-   ret(rating:number):void{
-     this.rating=rating;
+   MakingRating(i:number){
+     this.rating=i;
    }
-
 
   ngOnInit(): void {
   }
