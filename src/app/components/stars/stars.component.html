@@ -1,0 +1,7 @@
+<app-star 
+*ngFor='let a of amountStars; let i = index'
+[id]='i+1'
+[rating]='rating' 
+(UserRated)='ret($event)'>
+</app-star>
+<br>
