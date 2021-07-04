@@ -1,0 +1,13 @@
+.validator-label {
+    position: relative;
+    bottom: 22px;
+    left: 10px;
+    background-color: white;
+    padding: 0px 10px 0px 10px;
+    color: #dc3545;
+    font-size: small;
+}
+
+.validator-input {
+    height: 50px;
+}

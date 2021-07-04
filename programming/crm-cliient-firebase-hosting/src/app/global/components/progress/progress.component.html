@@ -1,0 +1,7 @@
+<ng-container *ngIf='activ'>
+
+    <div class="progress-text">{{percentage | number: '1.0-0' }}%</div>
+    <div class="progress progress-background">
+        <div class="progress-bar" [ngStyle]="{width: percentage+'%'}" ></div>
+    </div>
+</ng-container>

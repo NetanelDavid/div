@@ -1,0 +1,10 @@
+<div class="ms-5 mt-3">
+    <ng-container *ngIf='!click; else afterClick'>
+        <h5 class="mb-3">All data of your profile will be deleted, It will not be possible to restore them, delete?</h5>
+        <button class="btn btn-danger" (click)='deleteProfile()'>delete profile</button>
+    </ng-container>
+    <ng-template #afterClick>
+        <p class="display-6"> {{msg}}</p>
+        <button routerLink='' class="btn btn-secondary">return</button>
+    </ng-template>
+</div>

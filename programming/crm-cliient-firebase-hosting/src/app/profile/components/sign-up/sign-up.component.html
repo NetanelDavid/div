@@ -1,0 +1,20 @@
+<ng-container *ngIf="!oneClick;else afterOneClick">
+    <app-form (clickEvent)='uploadAndSignUp($event)'></app-form>
+    <p>{{msg1}}</p>
+</ng-container>
+<ng-template #afterOneClick>
+    <div *ngIf='msg2; else waiting' class="text-center m-5">
+        <i
+            [ngClass]="{'fas':true, 'fa-check':success, 'text-success': success,'fa-times': !success,'text-danger':!success }"></i>
+        {{msg2}}
+        <br>
+        <button (click)='twoClick()' class='btn btn-secondary mt-3'>{{success? 'sign in' : 'try again'}}</button>
+    </div>
+</ng-template>
+<ng-template #waiting>
+    <h5 class="mt-5 d-flex justify-content-center">you are being registered...</h5>
+    <h5 class="d-flex justify-content-center">please wait</h5>
+
+</ng-template>
+<app-progress [percentage]='percentage'></app-progress>
+

@@ -1,0 +1,3 @@
+<p><label [for]='fileForm.key'>{{ fileForm.key | underscore }}</label></p>
+<img [id]='fileForm.key' [title]="fileForm.key" [src]='imageSrc' (click)='readonly? null: fileInput.click()' class="img m-2">
+<input #fileInput accept="image/*" (input)='inputFile($event)' type="file" hidden>

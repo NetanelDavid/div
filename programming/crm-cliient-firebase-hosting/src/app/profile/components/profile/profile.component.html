@@ -1,0 +1,22 @@
+<ng-container *ngIf='isConnected; else NotConnected'>
+
+    <app-form (clickEvent)='clickEvent($event)'></app-form>
+    <app-progress [percentage]='percentage'></app-progress>
+
+    <button class="m-3 ms-5 btn btn-warning" [routerLink]='["signout"]'>sign out</button>
+    <button class="m-3 btn btn-danger" [routerLink]='["delete"]'>delete profile</button>
+    <button class="m-3 btn btn-primary" [routerLink]='["getall"]'>get all</button>
+
+    <div class="ms-5 my-3" *ngIf='!user.auth_amail'>
+        <p>{{msgEmail}}</p>
+        <button class="btn btn-primary my-2" (click)='sendAuth()'>get a link</button>
+    </div>
+
+</ng-container>
+
+<ng-template #NotConnected>
+
+    <button class="m-3 btn btn-primary" [routerLink]='["signin"]'>sign in</button>
+    <button class="m-3 btn btn-secondary" [routerLink]='["signup"]'>sign up</button>
+
+</ng-template>
